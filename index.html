@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAV BAR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ICON LIBRARY IMPORT -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body onload="rendorMovie()">
+    <header>
+      <nav>
+        <!-- <div class="menu-icon"><span class="fas fa-bars"></span></div> -->
+        <div class="logo"><strong>CODE Cinema</strong></div>
+        <div class="nav-items">
+          <div>
+            <button id="home-btn">
+              <li><a href="#">Home</a></li>
+            </button>
+          </div>
+          <div class="alphabet">
+            <button>
+              <li><a href="#">A-Z</a></li>
+            </button>
+          </div>
+          <div class="number">
+            <button>
+              <li><a href="#">Years</a></li>
+            </button>
+          </div>
+        </div>
+
+        <form action="#">
+          <input
+            type="search"
+            class="search-data"
+            placeholder="search"
+            required
+          />
+
+          <button type="submit">
+            <!-- <img src="image/image 5.png" alt=" search icon" /> -->
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+      </nav>
+    </header>
+    <section class="flexbox-container" id="movieList"></section>
+  </body>
+  <script src="script.js"></script>
+</html>
